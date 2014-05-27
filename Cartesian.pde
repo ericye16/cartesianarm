@@ -11,7 +11,6 @@ float theta1(float x, float y) {
 float theta2(float x, float y) {
   float mul = 1;
   float r = dist(0, 0, x ,y);
-  if (dist > arm_length * 2) throw new Exception();
   float t = acos(1 - sq(r) / (2 * sq(arm_length)));
   return mul * (180 - degrees(t));
 }
